@@ -3,32 +3,56 @@
 <head>
 <style>
     body {
-    background-color: blue;
+    background-color: lightblue;
 }
 
 h1 {
-    color: white;
+    color: blue;
     font-family: verdana;
     font-size: 40px;
     text-align: center;
 }
 
 h2 {
-    color: white;
+    color: blue;
     font-family: verdana;
     font-size: 30px;
     text-align: center;
 }
 
-#p1 {
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
     color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+#p1 {
+    color: blue;
     font-family: verdana;
     font-size: 20px;
     text-align: right;
 }
 
 #p2 {
-    color: white;
+    color: blue;
     font-family: verdana;
     font-size: 20px;
     text-align: right;
@@ -43,6 +67,18 @@ h2 {
     <h1> Zach Goodwin, Occidental College '21 </h1>
     <h2> News Editor at The Occidental</h2>
 
+    <section>
+  <nav>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">My Time at Occidental College</a></li>
+      <li><a href="#">Blog</a></li>
+        <li><a href = "#">Contact Me</a></li>
+    </ul>
+  </nav>
+    </section>
+
     <img src="with_dad.jpg" alt="My dad and I in Hydra, Greece" align="left" style="width:364px;height:273px">
 
     <p id="p1"><a href = "https://www.linkedin.com/in/zach-goodwin-a36b12143/"> Add me on LinkedIn </a> </p>
@@ -50,4 +86,4 @@ h2 {
     <p id="p2"><a href = "http://www.theoccidentalnews.com/author/zacharygoodwin"> Read my written work for The Occidental </a> </p>
 
 </body>
- </html>
+</html>
