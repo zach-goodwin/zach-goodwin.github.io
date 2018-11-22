@@ -2,22 +2,52 @@
  <html>
 <head>
 <style>
-    body {
-    background-color: lightblue;
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("spainbackground.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
-    color: blue;
-    font-family: verdana;
-    font-size: 40px;
-    text-align: center;
+    color: white;
+    font-family: times new roman;
+    font-size: 60px;
+    text-align: left;
+    padding-top: 70px;
+    padding-left: 70px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+
 }
 
 h2 {
-    color: blue;
-    font-family: verdana;
-    font-size: 30px;
-    text-align: center;
+    color: white;
+    font-family: times new roman;
+    font-size: 40px;
+    padding-left: 70px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h3 {
+    color: white;
+    font-family: times new roman;
+    font-size: 40px;
+    text-align: left;
+    padding-left: 70px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
 }
 
 ul {
@@ -36,7 +66,7 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 24px 28px;
     text-decoration: none;
 }
 
@@ -45,14 +75,14 @@ li a:hover {
 }
 
 #p1 {
-    color: blue;
+    color: white;
     font-family: verdana;
     font-size: 20px;
     text-align: right;
 }
 
 #p2 {
-    color: blue;
+    color: white;
     font-family: verdana;
     font-size: 20px;
     text-align: right;
@@ -64,10 +94,9 @@ li a:hover {
 </head>
 <body>
 
-    <h1> Zach Goodwin, Occidental College '21 </h1>
-    <h2> News Editor at The Occidental</h2>
+    <div class="bg">
 
-    <section>
+        <section>
   <nav>
     <ul>
         <li><a class="active" href="#home">Home</a></li>
@@ -79,11 +108,15 @@ li a:hover {
   </nav>
     </section>
 
-    <img src="with_dad.jpg" alt="My dad and I in Hydra, Greece" align="left" style="width:364px;height:273px">
+        <h1> Zach Goodwin </h1>
+        <h2> Occidental College</h2>
+        <h3> Aspiring Journalist and Writer </h3>
 
-    <p id="p1"><a href = "https://www.linkedin.com/in/zach-goodwin-a36b12143/"> Add me on LinkedIn </a> </p>
+            <p id="p1"><a href = "https://www.linkedin.com/in/zach-goodwin-a36b12143/"> Add me on LinkedIn </a> </p>
 
-    <p id="p2"><a href = "http://www.theoccidentalnews.com/author/zacharygoodwin"> Read my written work for The Occidental </a> </p>
+            <p id="p2"><a href = "http://www.theoccidentalnews.com/author/zacharygoodwin"> Read my written work for The Occidental </a> </p>
+
+    </div>
 
 </body>
 </html>
