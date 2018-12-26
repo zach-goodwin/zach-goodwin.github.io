@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+</head>
+<style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+       body {
+           background-color: lightblue;
+       }
+       ul {
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+           overflow: hidden;
+           background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 24px 28px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .left {
+            display: inline;
+            padding: 50px;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1 {
+            color: black;
+            font-family: times new roman;
+            font-size: 50px;
+            text-align: center;
+            padding-top: 0px;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+</style>
+<body>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="#about me">About Me</a></li>
+                <li><a href="#">My Published Work</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <div class="row">
+        <div class="column">
+            <img src="zachnaxos1.jpg" alt="Naxos" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="zachireland1.jpg" alt="Ireland" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="zachgrad1.jpg" alt="Prom" style="width:100%">
+        </div>
+    </div>
+
+    <h1> This is me </h1>
+
+</body>
+</html>
